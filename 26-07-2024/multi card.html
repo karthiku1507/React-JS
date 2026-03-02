@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="card.css"/>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script>
+        var image = React.createElement("img",{ src:"https://tse4.mm.bing.net/th?id=OIP.RwW6S3F3oPqFp7wCmpQpEAHaE7&pid=Api&P=0&h=180",Width:"50%"});
+        var h2 = React.createElement("h2",null," bus");
+        var p  = React.createElement("p",null,"all of you come show the bus and take the photos");
+        var button = React.createElement("button",null,"show bus");
+        let card = React.createElement("div",{id:"card"},[image,h2,p,button]);
+        let Container = React.createElement("div",{style:{display:"flex",justify:"space-evenly",justifyContent:"space-evenly",margin:"30px"}},card,card,card,card);
+        ReactDOM.render(Container,document.getElementById("root"));
+        </script>
+    </body>
+</html>

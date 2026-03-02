@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <script type="text/babel">
+           function F1(name){
+            let div = <div>
+                <h2>{name.fullname}</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, cum.</p>
+                <button>{name.but}</button>
+                 </div>
+           
+           return div;
+           }
+                function F2(){
+                    let maindiv = <div>
+                    <F1 fullname="karthik" but="login"/>
+                        </div>
+                        return maindiv;
+                }
+        ReactDOM.render(F2(),document.querySelector("body"))
+           
+        </script>
+    </body>
+</html>
