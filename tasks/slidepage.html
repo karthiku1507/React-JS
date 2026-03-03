@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <link rel="stylesheet" href="slidepage.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    </head>
+    <body>
+        <script type="text/babel">
+                function logo(){
+            let firstdiv=<div>
+                <h2>Amazon</h2>
+                </div>
+                return firstdiv
+            }
+            function nav(){
+            let navdiv=<div class="Navigation">
+                <nav>
+                    <a href="">All</a>
+                    <a href="">Electronics</a>
+                    <a href="">kids</a>
+                    <a href="">Mens</a>
+                    <a href="">Womens</a>
+                 </nav>
+                </div>
+                return navdiv
+            }
+            function third(){
+            let thirddiv=<div class="fonts">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-sharp fa-solid fa-heart"></i>
+                 </div>
+                 return thirddiv;
+                }
+
+                function logout(){
+            let buttondiv=<div>
+                <button class="button">Logout</button>
+                </div>
+                return buttondiv
+            }
+
+            function section(){
+               let sectiondiv=<div class="image-rotator"> 
+                <img class="image" src="https://m.media-amazon.com/images/I/51eiFYQhwBL._SR480,440_.jpg" width="100%" height="400px"/>
+                <img class="image" src="https://m.media-amazon.com/images/I/614hC7xBgtL._AC_UL480_FMwebp_QL65_.jpg" width="100%"  height="400px"/>
+                <img class="image" src="https://m.media-amazon.com/images/I/51j2mBT8iiL._AC_UL480_FMwebp_QL65_.jpg" width="100%" height="400px"/>
+                <img class="image" src="https://m.media-amazon.com/images/I/71tQau736AL._AC_UL480_QL65_.jpg" width="100%"  height="400px"/>
+              
+               </div>
+               return sectiondiv;
+            }
+            function fashion(){
+                let fashionDiv=<div class="fImages">
+                    <h1> Women offers</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero repudiandae eos enim quas reprehenderit culpa dolores fugit sapiente illum?</p>
+                    <button>Shop Now</button>
+                    </div>
+        
+                    return fashionDiv;
+            }
+
+            function fashionimage(){
+               let classdiv=<div class="fashionimage">
+                     <h5>Save20%</h5>
+                        <h3>Special Offer</h3>
+                        <button>ShopNow</button>
+                        </div>
+                        return classdiv
+            }
+
+            function fashionimg(){
+                let classesdiv=<div class="fashionimage">
+                     <h5>Save20%</h5>
+                        <h3>Special Offer</h3>
+                        <button>ShopNow</button>     
+                        </div>
+                        return classesdiv
+
+
+
+}
+function fashiondiv(){
+    let fashiondiv=<div class="fashiondiv">
+        {fashionimage()}{fashionimg()}
+         </div>
+         return fashiondiv
+}
+
+function app(){
+let maindiv=<div class="container"> {logo()}
+{nav()}
+{third()}
+{logout()}
+</div>
+return maindiv
+}
+function sectoionmain(){
+let div=<div class="section">
+    {section()}</div>
+    return div;
+}
+function fourthdiv(){
+return <div class="fashionImages">
+    {fashion()}{fashiondiv()}
+    </div>
+
+}
+
+
+        ReactDOM.render([app(),sectoionmain(),fourthdiv()],document.querySelector("body"))
+
+    </script>
+ </body>
+</html>

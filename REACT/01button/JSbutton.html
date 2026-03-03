@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Button</title>
+    </head>
+    <body>
+        <h2>JSButton</h2>
+        <script>
+            var btn =  document.createElement("Button");
+            btn.innerText = "JS Button";
+         function createOL(){
+
+          var ol =document.createElement("ol");
+         var li1= document.createElement("li");
+         var li2 = document.createElement("li");
+         var li3 = document.createElement("li");
+
+         li1.innerText = "abj kalam";
+         li2.innerText = "mahathama gandhi";
+         li3.innerText = "tangutur veresam pathulu garu";
+
+         ol.append(li1);
+         ol.append(li2);
+         ol.append(li3);
+
+          
+         document.querySelector("body").appendChild(ol);
+         }
+         document.querySelector("body").appendChild(btn);
+         createOL();
+         createOL();
+         createOL();
+
+        </script>
+    </body>
+</html>

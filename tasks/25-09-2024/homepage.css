@@ -1,0 +1,11 @@
+#page {
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    margin-right: 10px;
+}
+#body {
+    padding: 25px 30px;
+    background-color: red;
+}

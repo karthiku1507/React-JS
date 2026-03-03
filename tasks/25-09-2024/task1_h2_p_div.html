@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+             <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+             <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    </head>
+    \ <body>
+        <div id="root"></div>
+        <script>
+            var li1ReactElement=React.createElement("li",null,"name");
+            var li2ReactElement=React.createElement("li",null,"male");
+            var li3ReactElement=React.createElement("li",null,"age");
+            var orderReactElement=React.createElement("ol",null,[li1ReactElement,li2ReactElement,li3ReactElement]);
+            var div1ReactElement=React.createElement("div",null,orderReactElement);
+            var pReactElement= React.createElement("p",null,"karthik");
+            var h2ReactElement= React.createElement("h2",null,"ukvk");
+            var div2ReactElement= React.createElement("div",null,[pReactElement,h2ReactElement]);
+            var mainDivReactElement=React.createElement("Div",null,[div1ReactElement,div2ReactElement]);
+            ReactDOM.render(mainDivReactElement,document.getElementById("root"));
+            
+        </script>
+    </body>
+</html>

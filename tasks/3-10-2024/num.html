@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="num.css">
+   <script>
+    let count = 0;
+    function Count(){
+        let h2Element = document.querySelector("h2");
+        count = count+1;
+        console.log(count)
+        h2Element.innerText = count;
+    }
+   </script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>countvalue</h2>
+            <button onClick="Count()">change</button>
+        </div>
+    </body>
+</html>

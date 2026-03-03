@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="card.css">
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script>
+            var imageReact = React.createElement("img",{src:"https://wallpaperaccess.com/full/2027784.jpg",width:"100%",height:"200"});
+            var h1 = React.createElement("h1",null,"INDIAN FLAG")
+            var p = React.createElement("p",null,"indian people are most telented any work.one of most country in india");
+            var button = React.createElement("button",null,"Submit");
+
+            let card = React.createElement("div",{id:"card"},[imageReact,h1,p,button]);
+            // let container = React.createElement("div",null,[card,card,card])
+            ReactDOM.render(card,document.getElementById("root"))
+        </script>
+    </body>
+</html>

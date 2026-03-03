@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    text-decoration: none;
+    padding: 5px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 15% 60% 15% 10% ;
+    background-color:pink;
+    color:blue;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    ;
+}
+a{
+    color: white;
+    font-size: large;
+}
+.fonts{
+    display: flex;
+    justify-content: space-around;
+  
+}
+.button{
+    padding: 10px 20px;
+    background-color:black;
+    color: white;
+}
+.image{
+    width: 100vw;
+}
+.image-rotator {
+    position: relative;
+    width: 100%; /* Set a fixed width */
+    height: 400px; /* Set a fixed height */
+    overflow: hidden;
+}
+
+.image-rotator img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: rotate 9s infinite;
+}
+
+.image-rotator img:nth-child(1) {
+    animation-delay: 0s;
+}
+.image-rotator img:nth-child(2) {
+    animation-delay: 3s; /* Delay for the duration of one full cycle divided by the number of images */
+}
+
+.image-rotator img:nth-child(3) {
+    animation-delay: 6s;
+}
+.image-rotator img:nth-child(4) {
+    animation: delay 9s;
+}
+
+@keyframes rotate {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.fashionImages{
+    display: grid;
+    grid-template-columns: 70% 30%; 
+    gap:50px
+}
+.fashiondiv{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    width:100%
+}
+.fashionimage{
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img21/TVs/Nireeksh/Jupiter24/PC_version_revised_header.png");
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.fImages{
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/Isha/Honor/Final_01.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    height: 600px;
+   text-align: center;
+   padding: 50px;
+   color: white;
+   
+}

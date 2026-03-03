@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+        #para {
+            color: blue;
+            }
+            #head {
+                color: red;
+            }
+        
+    </style>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+            let h2 = <h2 id="head">JSX h2 element</h2>
+            let p = ( <p id="para"> jsx is very easy for reactjs and simple</p>
+            );
+            ReactDOM.render([h2,p,p,p,p,p,p],document.getElementById("root"));
+
+        </script>
+    </body>
+</html>

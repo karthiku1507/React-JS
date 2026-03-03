@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <link rel="stylesheet" href="card.css" />
+
+</head>
+<body>
+    <script>
+        var imageReactElement=React.createElement("img",{src:"https://tse4.mm.bing.net/th?id=OIP.Kjzu6TrJo5XjQMGsw9R_0wHaLH&pid=Api&P=0&h=180"});
+        var h2ReactElement=React.createElement("h2",null,"react is very different");
+        var pReactElement=React.createElement("p",null,"Pawan Kalyan is a renowned Indian actor, politician, and film producer. With a successful career in the Telugu film industry, he is known for his powerful performances, mass appeal, and socially");
+        var buttonReactElement=React.createElement("button",null,"login")
+        var divReactElement=React.createElement("div",{id:"card"},[imageReactElement,h2ReactElement,pReactElement, buttonReactElement]);
+        ReactDOM.render(divReactElement,document.querySelector("body"));
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="homepage.css"/>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+  <body>
+    <div id="body"></div>
+    <script>
+     var h2ReactElement = React.createElement("h2",null,"puma");
+     var div1ReactElement = React.createElement("div",null,"h2ReactElement");
+     var a1ReactElement = React.createElement("a",{href:"#"},"home");
+     var a2ReactElement = React.createElement("a",{href:"#"},"Electronics");
+     var a3ReactElement = React.createElement("a",{href:"#"},"Jewelery");
+     var a4ReactElement = React.createElement("a",{href:"#"},"Mens");
+     var a5ReactElement = React.createElement("a",{href:"#"},"womens");
+     var a6ReactElement = React.createElement("a",{href:"#"},"kids");
+     var div2ReactElement = React.createElement("div",null,[a1ReactElement,a2ReactElement,a3ReactElement,a4ReactElement,a5ReactElement,a6ReactElement]);
+     var buttonReactElement = React.createElement("button",null,"login");
+     var div3ReactElement = React.createElement("button",null,buttonReactElement);
+     var maindivReactElement = React.createElement("maindiv",{id : "page"},[div1ReactElement,div2ReactElement,div3ReactElement]);
+     ReactDOM.render(maindivReactElement,document.getElementById("body"));
+    </script>
+  </body>
+</html>
