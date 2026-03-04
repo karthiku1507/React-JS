@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head><script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <link rel="stylesheet" href="Task1.css"/>
+    </head>
+    <body>
+        <script type="text/babel">
+            function heading(){
+            let div = <div class ="section1">
+            <h1>tittle</h1>
+                  </div>
+                  return div;
+                }
+                function subheading(){
+                    let maindiv= <div class ="section2">
+                        <h2>MERN</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum minima amet, nesciunt nobis, possimus alias eveniet ipsam accusamus eum facilis odit eos itaque et. Officiis sunt cupiditate alias distinctio, odit quod pariatur perferendis molestias ut corporis, eum unde ducimus quis error sed odio autem quam. Nobis ad blanditiis amet architecto.</p>
+                          </div>
+                          return maindiv;
+                }
+                function f2(){
+                    let div= <div class ="section3">
+                        <h2>fotter</h2>
+                        </div>
+                        return div;
+                }
+                ReactDOM.render([heading(),subheading(),f2()],document.querySelector("body"))
+
+
+
+        </script>
+        
+    </body>
+</html>

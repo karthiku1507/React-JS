@@ -1,0 +1,100 @@
+* {
+  padding: o;
+  margin: 0;
+  text-decoration: none;
+}
+.navHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+li {
+  list-style: none;
+  display: inline;
+}
+li a {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  margin-right: 25px;
+  font-weight: bold;
+}
+.navDiv {
+  margin-left: 15px;
+}
+
+.section1 {
+  height: 500px;
+  background-image: url(https://images.woodenstreet.de/image/cache/data%2Foffice-table%2Felif-work-station-table-exotic-teak-finish%2Fexotic-teak-frosty-white-finish%2Fnew-logo-new%2F8-750x650.jpg);
+  background-size: 100% 500px;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 100px;
+}
+#sectionButton {
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: rgb(107, 107, 222);
+  color: #ffff;
+  border: none;
+  margin-top: 20px;
+}
+.mainSection2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.subSection1 {
+  text-align: center;
+  padding: 50px 10px;
+  height: 250px;
+  width: 30%;
+}
+.section2Image {
+  width: 50px;
+  height: 70px;
+  border-radius: 50%;
+}
+#h2Section2 {
+  margin-left: 700px;
+  font-weight: bolder;
+}
+.section3 {
+  background-image: URL(https://media.istockphoto.com/id/1297483389/photo/masala-tea-chai.jpg?s=2048x2048&w=is&k=20&c=PDKzb92QYAOUa6RWZOxT13e-vZ-cZWbIwETq9CeRSm8=);
+  background-size: 100% 400px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+}
+.subSection3 {
+  color: #fff;
+  text-align: center;
+}
+.section3 i {
+  color: white;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+}
+.section4 {
+  display: flex;
+  justify-content: around;
+  align-items: center;
+  background-color: rgb(31, 30, 30);
+  color: white;
+}
+.subsection4 {
+  width: 50%;
+  height: 200px;
+}
+.images {
+  display:grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px;
+}
+.sectionImage {
+  height: 50px;
+  width: 80px;
+}
